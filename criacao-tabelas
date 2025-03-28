@@ -1,0 +1,4 @@
+create tables categorias (
+id_categoria int not null auto_increment primary key,
+nome varchar(30), 
+descricao text(50));
