@@ -1,0 +1,6 @@
+create table emprestimos(
+id_emprestimo int not null auto_increment primary key,
+id_livro int,
+data_emprestimo date,
+data_devolucao date,
+status varchar(30));
