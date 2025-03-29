@@ -1,6 +1,30 @@
+
 create table autores(
 	id_autor int not null auto_increment primary key, 
 	nome varchar(30),
 	sobrenome varchar(30), 
 	data_nascimento date,
 	nacionalidade varchar(30));
+
+
+create table categorias (
+id_categoria int not null auto_increment primary key,
+nome varchar(30), 
+descricao text(50));
+
+
+create table emprestimos(
+id_emprestimo int not null auto_increment primary key,
+id_livro int,
+data_emprestimo date,
+data_devolucao date,
+status varchar(30));
+
+create table livros(
+id_livros int not null auto_increment primary key,
+titulo varchar(50),
+isbn varchar(50),
+id_autor int,
+id_categoria int,
+ano_publicacao int);
+
