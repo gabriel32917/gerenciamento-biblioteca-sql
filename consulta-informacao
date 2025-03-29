@@ -1,0 +1,10 @@
+select * from autores;
+select * from autores where id_autor = 1;
+
+select * from categorias;
+select * from categorias where id_categoria = 2;
+
+select * from emprestimos;
+
+select * from livros;
+select * from livros where id_livros = 3;
