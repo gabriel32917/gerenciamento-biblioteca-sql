@@ -1,0 +1,39 @@
+autores:
+
+INSERT INTO autores (id_autor, nome, sobrenome, data_nascimento, nacionalidade)
+VALUES
+(1, 'Gabriel', 'García Márquez', '1927-03-06', 'Colombiana'),
+(2, 'J.K.', 'Rowling', '1965-07-31', 'Britânica'),
+(3, 'Haruki', 'Murakami', '1949-01-12', 'Japonesa'),
+(4, 'Chimamanda', 'Ngozi Adichie', '1977-09-15', 'Nigeriana'),
+(5, 'George', 'Orwell', '1903-06-25', 'Britânica');
+
+categorias:
+
+INSERT INTO categorias (id_categoria, nome, descricao)
+VALUES
+(1, 'Ficção', 'Categoria que inclui livros de ficção, histórias inventadas e criativas.'),
+(2, 'Não-ficção', 'Categoria que inclui livros baseados em fatos reais e informações verificadas.'),
+(3, 'Fantasia', 'Categoria que abrange livros que exploram mundos imaginários e elementos mágicos.'),
+(4, 'Mistério', 'Categoria que envolve livros focados em mistérios e investigações.'),
+(5, 'Romance', 'Categoria centrada em histórias de amor e relacionamentos pessoais.');
+
+empréstimos:
+
+INSERT INTO emprestimos (id_emprestimo, id_livro, data_emprestimo, data_devolucao, status)
+VALUES
+(1, 1, '2025-03-28', '2025-04-28', 'Em aberto'),
+(2, 2, '2025-03-25', '2025-04-25', 'Devolvido'),
+(3, 3, '2025-03-20', '2025-04-20', 'Em aberto'),
+(4, 4, '2025-03-18', '2025-04-18', 'Devolvido'),
+(5, 5, '2025-03-22', '2025-04-22', 'Em aberto');
+
+livros:
+
+INSERT INTO livros (id_livros, titulo, isbn, id_autor, id_categoria, ano_publicacao)
+VALUES
+(1, 'Cem Anos de Solidão', '978-0307474728', 1, 1, 1967),
+(2, 'Harry Potter e a Pedra Filosofal', '978-0747532699', 2, 4, 1997),
+(3, 'Norwegian Wood', '978-0375704024', 3, 3, 1987),
+(4, 'Americanah', '978-0307456395', 4, 2, 2013),
+(5, '1984', '978-0451524935', 5, 2, 1949);
